@@ -1,0 +1,9 @@
+alias monolith='cd ~/opallabs/cabochon/packages/monolith'
+alias cabochon='cd ~/opallabs/cabochon'
+alias universe='cd ~/opallabs/cabochon/packages/universe'
+alias be='bundle exec'
+alias ber='bundle exec rspec -p -f d'
+alias ydrr='yarn --pure-lockfile docker:rails:rspec --profile -f d'
+alias ydrc='yarn --pure-lockfile docker:rails:console'
+
+alias delete-merged='git branch --merged | grep -v "\*" | grep -v master | grep -v development | xargs -n 1 git branch -d'
