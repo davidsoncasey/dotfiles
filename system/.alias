@@ -5,5 +5,6 @@ alias be='bundle exec'
 alias ber='bundle exec rspec -p -f d'
 alias ydrr='yarn --pure-lockfile docker:rails:rspec --profile -f d'
 alias ydrc='yarn --pure-lockfile docker:rails:console'
+alias docker_ssh='function _docker_ssh(){ docker exec -it $1.1.$(docker service ps -f "desired-state=running" -q $1 | cut -d: -f1) sh};_docker_ssh'
 
 alias delete-merged='git branch --merged | grep -v "\*" | grep -v master | grep -v development | xargs -n 1 git branch -d'
